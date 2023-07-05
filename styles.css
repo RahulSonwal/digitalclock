@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #A01D1E;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-heading {
+    font-size: 6.2rem;
+    text-align: center;
+    margin: 12rem 0 4rem;
+}
+
+.clock-box {
+    max-width: 50rem;
+    height: 20rem;
+    margin: 0 auto;
+    background-color: #60110f;
+    box-shadow: 0 10px 12px rgba(109, 0, 0, 0.527);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.clock-container {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.hours,
+.colon,
+.minutes {
+    font-size: 11rem;
+    font-weight: 700;
+}
+
+.ampm,
+.seconds {
+    font-size: 1.6rem;
+    right: -3.8rem;
+}
+
+.ampm {
+    position: absolute;
+    top: 4rem;
+}
+
+.seconds {
+    position: absolute;
+    bottom: 4.4rem;
+}
+
+.date-container {
+    margin-bottom: 2.4rem;
+}
+
+.month,
+.date,
+.day,
+.year {
+    font-size: 1.8rem;
+}
+
+
+/* Media Query */
+
+@media (max-width: 34em) {
+    html {
+        font-size: 50%;
+    }
+
+    .clock-box {
+        max-width: 45rem;
+    }
+}
