@@ -22,7 +22,7 @@ function digitalClock() {
     let year = new Date().getFullYear();
     let ampm = "AM";
 
-    if (h > 12) {
+    if (h > 11) {
         h = h - 12;
         ampm = "PM"
     }
