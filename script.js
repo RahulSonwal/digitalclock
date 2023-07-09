@@ -23,7 +23,7 @@ function digitalClock() {
     let ampm = "AM";
 
     if (h > 11) {
-        h = h - 11;
+        h = h - 12;
         ampm = "PM"
     }
 
